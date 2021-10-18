@@ -1,6 +1,6 @@
 export default function Navigator() {
   return (
-    <>
+    <div className="navigator">
       <div className="item selected">
         <span className="item-icon">
           <img src={require("../assets/icons/home.png")} alt="account logo" />
@@ -40,6 +40,6 @@ export default function Navigator() {
         </span>
         <span className="item-text">More</span>
       </div>
-    </>
+    </div>
   );
 }

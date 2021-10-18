@@ -14,9 +14,8 @@ export default function App() {
         <SimplSupportedApps />
         <Transactions />
       </div>
-      <div className="navigator">
-        <Navigator />
-      </div>
+
+      <Navigator />
     </div>
   );
 }

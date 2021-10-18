@@ -42,8 +42,9 @@ It will be scrollable keep navigator fixed.
 Reducing navigator height plus all margins,padding from total height.
 **/
 .content {
-  height: calc(100vh - 60px);
   overflow-y: auto;
+  height: calc(100vh - 60px);
+  overflow-x: hidden;
 }
 .content > div {
   margin-bottom: 15px;
@@ -215,7 +216,6 @@ Reducing navigator height plus all margins,padding from total height.
 .navigator {
   display: flex;
   align-items: center;
-  position: fixed;
   bottom: 0;
   height: 50px;
   width: 100%;
@@ -225,4 +225,46 @@ Reducing navigator height plus all margins,padding from total height.
 
 .navigator .selected {
   border-top: 2px solid var(--main-app-color);
+}
+.transaction-grid-container {
+  display: grid;
+  color: black;
+  font-family: sans-serif;
+  font-size: 12px;
+  grid-template-columns: minmax(auto, 10%) minmax(50px, 70%) minmax(50px, 20%);
+  align-content: center;
+  grid-gap: 5px;
+  padding: var(--default-margin);
+}
+.tansaction-style {
+  font-weight: bold;
+  margin-right: var(--default-margin);
+}
+.transaction-grid-container :nth-child(1) {
+  grid-row: 1 / 4;
+}
+.transaction-grid-container :nth-child(6) {
+  grid-column: 2 / 4;
+}
+.transaction-status {
+  font-size: 10px;
+  color: #888888;
+  background-color: #ededed;
+  padding: 2px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tansaction-method {
+  color: var(--main-app-color);
+  background-color: #e6faf9;
+  display: inline-flex;
+  padding: 2px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.higlight {
+  color: #ff9401;
 }
