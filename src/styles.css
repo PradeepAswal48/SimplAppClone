@@ -12,6 +12,10 @@ a {
   color: var(--main-app-color);
   text-decoration: underline;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .App {
   display: flex;
@@ -32,15 +36,18 @@ To center app only in case of desktop size
     margin-right: 25%;
   }
 }
+/**
+Content contains everything except the Navigator at the bottom. 
+It will be scrollable keep navigator fixed.
+Reducing navigator height plus all margins,padding from total height.
+**/
+.content {
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
 .content > div {
   margin-bottom: 15px;
   background-color: #fff;
-}
-.navigator {
-  display: flex;
-  align-self: center;
-  position: absolute;
-  bottom: 0;
 }
 
 .account-cards {
@@ -203,4 +210,19 @@ To center app only in case of desktop size
   font-size: 10px;
   padding: 5px;
   min-width: 60px;
+}
+
+.navigator {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  justify-content: space-evenly;
+}
+
+.navigator .selected {
+  border-top: 2px solid var(--main-app-color);
 }
