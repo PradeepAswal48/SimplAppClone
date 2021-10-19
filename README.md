@@ -1,6 +1,12 @@
 # Simpl Assignment
 
 A brief description of the thought process while desinging and the assumptions that were made.
+#Structure
+
+- Components folder contains different section of the UI components.
+- Assests folder contain logos and icons.
+- App.js is where all components resides.
+- Style.css contains all the css for the app.
 
 # Thought process
 
