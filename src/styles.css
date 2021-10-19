@@ -100,7 +100,7 @@ Reducing navigator height plus all margins,padding from total height.
   padding: var(--default-margin);
   border-radius: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
-  min-width: calc(90% - var(--default-margin));
+  min-width: calc(80% - var(--default-margin));
   height: calc(90% - var(--default-margin) - 10px);
   margin-right: var(--default-margin);
   scroll-snap-align: center;

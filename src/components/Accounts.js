@@ -89,7 +89,7 @@ export default function Account() {
           </div>
         </div>
 
-        <div className="card">
+        <div className="card" style={{ marginRight: "50px" }}>
           <div className="account-logo-container">
             <img
               src={require("../assets/logos/Logo1.png")}
